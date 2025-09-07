@@ -14,6 +14,8 @@ RUN set -ex; \
         imagemagick-webp \
         imagemagick-svg \
         rsync \
+        ffmpeg \
+        aria2 \
     ; \
     \
     rm /var/spool/cron/crontabs/root; \
@@ -41,6 +43,7 @@ RUN set -ex; \
         openldap-dev \
         pcre-dev \
         postgresql-dev \
+     
     ; \
     \
     docker-php-ext-configure ftp --with-openssl-dir=/usr; \
